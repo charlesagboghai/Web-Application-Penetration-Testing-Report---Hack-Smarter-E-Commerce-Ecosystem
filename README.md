@@ -11,7 +11,7 @@ During the assessment, multiple security vulnerabilities of varying severity wer
 + *hacksmarter.hsm
   
  # Assessment Type
-   Grey Box Web Application Penetration Test
+   Grey Box Web Application Penetration Testing
    
  # Penetration Tester
    Charles Agboghai Ozor
