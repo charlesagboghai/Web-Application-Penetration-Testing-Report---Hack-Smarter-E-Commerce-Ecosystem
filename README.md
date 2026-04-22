@@ -6,9 +6,15 @@ This report presents the results of a web application penetration test conducted
 The testing was carried out using a structured methodology aligned with industry standards, including the OWASP Testing Guide and OWASP Top 10 framework. A combination of automated tools and manual techniques was used to simulate real-world attack scenarios from an external attacker’s perspective.
 During the assessment, multiple security vulnerabilities of varying severity were identified. These included critical issues such as improper input validation and insecure file upload mechanisms, as well as high and medium risk vulnerabilities like cross-site scripting (XSS), clickjacking, insecure direct object references (IDOR), SQLi and missing security controls. If exploited, these vulnerabilities could allow unauthorized access to sensitive data, compromise user accounts, and potentially lead to full system takeover.
 
-# Target
+ # Target
 + hacksmarter.hsm
 + *hacksmarter.hsm
+  
+ # Assessment Type
+   Grey Box Web Application Penetration Test
+   
+ # Penetration Tester
+   Charles Agboghai Ozor
 
   # Tools Used
   + Caido (Web traffic monitoring and request modification)
