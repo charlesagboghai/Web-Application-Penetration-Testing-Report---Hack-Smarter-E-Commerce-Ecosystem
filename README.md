@@ -49,7 +49,7 @@ During the assessment, multiple security vulnerabilities of varying severity wer
   + Medium: Insecure Direct Object Reference (IDOR) Allowing Access to Unreleased Products 
   + Low: Absence of CAPTCHA Protection on Public-Facing Forms and Authentication Endpoints
 
- # Coclusion
+ # Conclusion
    The penetration test identified multiple security vulnerabilities across the web application, including several Critical and High-risk findings that could lead to unauthorized access, account compromise, sensitive data    exposure, and potential full system takeover. Additional Medium and Low severity issues were also observed, indicating weaknesses in security controls and configuration practices.
 
    Overall, the application’s security posture requires improvement. Immediate remediation of Critical and High findings is recommended, followed by corrective actions for lower-risk issues to reduce overall exposure and     strengthen resilience against future attacks.
