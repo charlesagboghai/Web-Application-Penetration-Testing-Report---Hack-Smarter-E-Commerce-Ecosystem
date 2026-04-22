@@ -10,14 +10,42 @@ During the assessment, multiple security vulnerabilities of varying severity wer
 + hacksmarter.hsm
 + *hacksmarter.hsm
 
-  #Tools Used
+  # Tools Used
   + Caido (Web traffic monitoring and request modification)
-  + Kali Linux
-  + Burp Suite
-  + John The Ripper
-  + Dirsearch
-  + SQLMap
-  + FFUF
+  + Kali Linux (Testing Environment)
+  + Burp Suite (Web traffic monitoring and request modification)
+  + John The Ripper (Cracking Of Password)
+  + Dirsearch (Directory Brute forcing)
+  + SQLMap (Detect And Exploit SQL Injection Vulnerabilities)
+  + FFUF (Subdomain Enumeration)
+
+  # Findings
+  + Critical: Remote Code Execution via Insecure File Upload (Magic Bytes / Signature Bypass)
+  + Critical: SQL Injection in Product Search Leading to Credential Disclosure and Administrative Account Compromise
+  + Critical: Information Disclosure of Database User Context via SQL Injection (Database Credential Exposure) 
+  + Critical: Stored Cross-Site Scripting (XSS) in Forum, Feedback, and Thread Functionality 
+  + High:  Local File Inclusion (LFI) via Path Traversal in lang Parameter 
+  + High: Lack of Registration Rate Limiting / Automated Account Creation Abuse 
+  + Improper Session Invalidation After Credential Change 
+  + High: Cross-Site Request Forgery (CSRF) in Email Change Function with Missing Anti-CSRF Validation 
+  + Weak Authentication Controls Susceptible to Password Spraying / Brute Force Attacks 
+  + High: Weak Password Policy / Insufficient Password Complexity Enforcement 
+  + High: Client-Side Access Control Bypass Leading to Unauthorized Product Purchase 
+  + High: Session Fixation Due to Non-Regenerated Session Identifier After Authentication
+  + High: Missing Current Password Verification for Sensitive Account Changes 
+  + High: Blind Server-Side Request Forgery (SSRF) via Avatar URL Import Functionality
+  + Medium: Clickjacking Due to Missing Anti-Framing Protections 
+  + Medium: Information Disclosure via Web Server Fingerprinting 
+  + Medium: PHP Configuration Information on Development Subdomain 
+  + Medium: Absence of Multi-Factor Authentication (MFA) Across Application Authentication Systems 
+  + Medium: Sensitive Endpoint Disclosure via Directory Bruteforcing 
+  + Medium: Username Enumeration via Authentication Response Discrepancy 
+  + Medium: Username Enumeration via Registration Response Disclosure 
+  + Medium: HTML Injection in User-Generated Content Fields (Forum, Feedback, and Thread Creation) 
+  + Medium: Open Redirect via Unvalidated “next” Parameter in Login Functionality 
+  + Medium: Missing HttpOnly Cookie Attribute on Session Cookies 
+  + Medium: Insecure Direct Object Reference (IDOR) Allowing Access to Unreleased Products 
+  + Low: Absence of CAPTCHA Protection on Public-Facing Forms and Authentication Endpoints 
 
   
 
